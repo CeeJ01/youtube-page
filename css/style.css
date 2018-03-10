@@ -1,0 +1,174 @@
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+
+button {
+	box-sizing: border-box;
+	border: none;
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.glyphicon {
+  font-family: 'Glyphicons Halflings';
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+.flex{
+	flex: 1;
+}
+
+.container {
+	margin: 0 auto;
+	margin-top: 24px;
+	min-width: 50%;
+	max-width: 69%;
+
+}
+ 
+/* VIDEO: */
+
+.video-container {
+	width: 66%;
+}
+
+.video-nav {
+	width: 66%;
+}
+
+
+/* PRIMARY-INFO: */
+
+
+.primary-info {
+
+	padding: 20px 0 8px 0;
+	border-bottom: 1px solid grey;
+
+}
+
+.primary-info-cont {
+	display: flex;
+	align-content: center;
+}
+
+.view-count {
+
+}
+
+.menu-controller {
+	position: relative;
+}
+
+.likes {
+	align-items: center;
+	padding-right: 10px;
+
+}
+
+#like-button {
+	border: none;
+	margin: 0;
+}
+
+/* SECONDARY-INFO: */
+
+.top-row {
+	margin-bottom: 12px;
+	margin-top:16px;
+	display: flex;
+	flex-direction: row;
+}
+
+.yt-img {
+	margin-right: 16px;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#author-img {
+	display: flex;
+}
+
+.upload-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.owner-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.date {
+
+}
+
+.subscribe-button-renderer {
+	display: flex;
+}
+
+.subscribe-button {
+	padding: 10px 16px;
+	margin: auto 4px;
+}
+
+#number-subs {
+	margin-left: 3px;
+}
+
+.share {
+
+}
+
+.description {
+	margin-left: 64px;
+	white-space: pre-line;
+}
+
+
+#more {
+	white-space: normal;
+	margin-top: 32px;
+}
+
+
+/* COMMENTS: */
+
+.comments {
+	float: left;
+	width: 66%;
+}
+
+.up-next {
+	float: right;
+	width: 32%;
+}

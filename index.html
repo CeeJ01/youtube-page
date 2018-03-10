@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Fake YouTube Page by CJ Carmean</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+	<style type="text/css">
+		@font-face {
+    	font-family: "My Custom Font";
+    	src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
+		}
+		p.customfont { 
+    	font-family: "", Verdana, Tahoma;
+		}
+</style>
+
+	<title>Fake YouTube Page by CJ Carmean</title>
 </head>
 <body>
 	<nav id=>
@@ -47,45 +63,75 @@
 				<p>Recommended for you</p>
 			</div>
 		</aside>
-		<div class="video">
-			<iframe width="100%" height="470px" framborder="0" src="https://www.youtube.com/embed/oYmqJl4MoNI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<div class="video-container">
+			<div class="video">
+				<iframe width="100%" height="470px" framborder="0" src="https://www.youtube.com/embed/oYmqJl4MoNI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
 		</div>
-		<div class="description">
-			<div class="title-views">
-				<h3 id="title">Ryan Lockwood - Streets Agent 1:12 [subtitles]</h3>
+			<div class="video-nav">
 				<div class="primary-info">
-					<span class="view-count">1,005,618 views</span>
-					<div class="flex"></div>
-					<div class="share">
-						<a href="">LIKES</a>
-						<a href="">DISLIKES</a>
-						<a href="">SHARE</a>
-						<a href="">ADD TO</a>
+					<h1 id="title">Ryan Lockwood - Streets Agent 1:12 [subtitles]</h1>
+					<div class="primary-info-cont">
+						<div class="view-count">
+							<span>1,005,618 views</span>
+						</div>
+						<div class="flex"></div>
+						<div class="menu-controller">
+							<a class="likes">
+								<button>
+    								<span id="like-button" class=".glyphicon glyphicon-thumbs-up"></span>
+								</button>
+								<span>25K</span>
+							</a>
+							<a href="">DISLIKES</a>
+							<a href="">SHARE</a>
+							<a href="">ADD TO</a>
+						</div>
 					</div>
 				</div>
-
-			</div>
-			<div class="video-nav">
-				<div class="upload-info">
-					<p id="author">trenthovis</p>
-					<p id="publish-date">Published on Jan 2, 2014</p>
-					<div class="flex"></div>
-				<div class="sub-button">
-					<button href="">SUBSCRIBE</button>
+				<div class="secondary-info">
+					<div class="top-row">
+						<a href="">
+							<img id="author-img" class="yt-img" src="">
+						</a>
+						<div class="upload-info">
+							<div class="owner-container">
+								<a id="author">trenthovis</a>
+							</div>
+							<div class="date">
+								<span id="publish-date">Published on Jan 2, 2014</span>
+							</div>
+						</div>
+						<div class="subscribe-button-renderer">
+							<button class="subscribe-button" href="">
+							SUBSCRIBE
+							<span id="number-subs">382</span>
+						</button>
+					</div>
+					</div>
 				</div>
-				</div>
-
-				<p id="full-description">twitch.tv/RyanLockwood - 	Watch more of Ryan's Speedruns 
+				<div class="description">twitch.tv/RyanLockwood - Watch more of Ryan's Speedruns
 					the-elite.net - Goldeneye and Perfect Dark speedruns
+					<button id="more">
+						<span>SHOW MORE</span>
+					</button>
 
-					Ryan Lockwood's narrated replay of his record-tying 1:12 Streets Agent run with subtitles.  He's narrating his run over stream to a 50+ audience, shortly after achieving it. It was the first time he or anyone else watched the run...</p>
+				</div>
+
+
+
 			</div>
-		</div>
 		<div class="comments">
 			<h4>27 Comments</h4>
 			<a href="">SORT BY</a>
 			<input type="text" name="new-comment">
 		</div>
 	</div>
+	
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
