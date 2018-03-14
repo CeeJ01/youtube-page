@@ -3,11 +3,17 @@ h1 {
 	padding: 0;
 }
 
+input {
+}
 
 button {
 	box-sizing: border-box;
 	border: none;
 	background: transparent;
+}
+
+.glyphicon {
+	color: #969696;
 }
 
 
@@ -35,6 +41,8 @@ button {
 }
 
 .main-container {
+	position: relative;
+	top: 56px;
 	margin: 0 auto;
 	margin-top: 24px;
 	min-width: 50%;
@@ -45,24 +53,92 @@ button {
 /* NAV BAR: */
 .nav-bar {
 	position: fixed;
+	z-index: 1;
+	font-size: 18px;
 	top: 0;
 	padding: 0 16px;
 	width: 100%;
 	height: 56px;
+	background-color: white;
+	box-shadow: 0px -8px 16px 1px rgba(0, 0, 255, .2);
 	display: flex;
 	align-items: center;
 }
 
 .nav-bar-left{
 	float: left;
+	display: flex;
+	align-items: center;
+}
+
+.youtube-logo {
+	width: 129px;
 }
 
 .nav-bar-search-bar {
+	display: flex;
+	margin: 0px 32px;
 	flex: 1;
+}
+
+.search-box {
+	width: 591px;
+	font-size: 16px;
+	padding: 4px 13px;
+	border: 1px solid rgba(0, 0, 255, .2);
+	border-radius: 2px 0 0 2px;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 255, .1);
+}
+
+.search-button {
+	width: 65px;
+	height: 32px;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(0, 0, 255, .2);
+	border-left: 0;
+	border-radius: 2px 0 0 2px;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 255, .1);
+	background-color: #f2f2f2
+}
+
+.glyphicon .glyphicon-search {
+	color: 	color: #969696;
 }
 
 .nav-bar-right{
 	float: right;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.right-button {
+	margin-right: 12px;
+	padding: 7px 11px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-button-profile {
+	background: #008000;
+	margin-right: 10px;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.right-button-profile-text {
+	font-size: 16px;
+	position: relative;
+	top: 1px;
+	color: white;
 }
 
 /* VIDEO: */
@@ -228,4 +304,16 @@ button {
 .up-next {
 	float: right;
 	width: 32%;
+}
+
+/* UP-NEXT ASIDE: */
+
+.up-next {
+	display: flex;
+	flex-direction: column;
+}
+
+.autoplay {
+	display: flex;
+	flex-direction: row;
 }

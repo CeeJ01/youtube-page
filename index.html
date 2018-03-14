@@ -15,23 +15,37 @@
 <body>
 	<nav class="nav-bar">
 		<div class="nav-bar-left">
-			<span class="glyphicon glyphicon-menu-hamburger"></span>
-			<span>YouTube</span>
+			<span class="nav-bar-icon glyphicon glyphicon-menu-hamburger" style="padding: 11px; margin-right: 22px;"></span>
+			<div style="width: 129px;">
+				<span class="youtube-logo">YouTube</span>
+			</div>	
 		</div>
 		<div class="nav-bar-search-bar">
-			<input type="text" name="search">
-			<span class="glyphicon glyphicon-search"></span>
+				<input class="search-box" type="text" name="search" placeholder="Search">
+				<div class="search-button">
+					<span class="glyphicon glyphicon-search"></span>
+				</div>
 		</div>
 		<div class="nav-bar-right">
-			<span class="glyphicon glyphicon-download-alt" style="-webkit-transform:rotate(180deg);"></span>
+			<span class="right-button glyphicon glyphicon-download-alt" style="-webkit-transform:rotate(180deg);"></span>
 
-			<span class="glyphicon glyphicon-th"></span>
-			<span class="glyphicon glyphicon-bell"></span>
-			<a href="">Me</a>
+			<span class="right-button glyphicon glyphicon-th" style="	margin-left: 2px;"></span>
+			<span class="right-button glyphicon glyphicon-bell"></span>
+			<div class="right-button-profile">
+				<a class="right-button-profile-text" href="">CJ</a>
+			</div>
 		</div>
 	</nav>
 	<div class="main-container">
 		<aside class="up-next">
+			<div class="autoplay">
+				<div class="autoplay-info">
+					<div id="up-next-text" class="up-next">Up next</div>
+					<div id="autoplay-text">AUTOPLAY</div>
+					<button class="autoplay-toggle">0</button>
+				</div>
+			</div>
+
 			<div>
 				<img src="" width="168" height="94">
 				<h4>This is a video you might like</h4>
