@@ -4,33 +4,33 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles/style.css" />
 
-	<style type="text/css">
-		@font-face {
-    	font-family: "My Custom Font";
-    	src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
-		}
-		p.customfont { 
-    	font-family: "", Verdana, Tahoma;
-		}
-</style>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<title>Fake YouTube Page by CJ Carmean</title>
 </head>
 <body>
-	<nav id=>
-		<a href="">MORE</a>
-		<a href="">YouTube</a>
-		<input type="text" name="search">
-		<a href="">UPLOAD</a>
-		<a href="">YOUTUBE APPS</a>
-		<a href="">NOTIFICATIONS</a>
-		<a href="">PROFILE</a>
+	<nav class="nav-bar">
+		<div class="nav-bar-left">
+			<span class="glyphicon glyphicon-menu-hamburger"></span>
+			<span>YouTube</span>
+		</div>
+		<div class="nav-bar-search-bar">
+			<input type="text" name="search">
+			<span class="glyphicon glyphicon-search"></span>
+		</div>
+		<div class="nav-bar-right">
+			<span class="glyphicon glyphicon-download-alt" style="-webkit-transform:rotate(180deg);"></span>
+
+			<span class="glyphicon glyphicon-th"></span>
+			<span class="glyphicon glyphicon-bell"></span>
+			<a href="">Me</a>
+		</div>
 	</nav>
-	<div class="container">
+	<div class="main-container">
 		<aside class="up-next">
 			<div>
 				<img src="" width="168" height="94">
@@ -73,20 +73,48 @@
 					<h1 id="title">Ryan Lockwood - Streets Agent 1:12 [subtitles]</h1>
 					<div class="primary-info-cont">
 						<div class="view-count">
-							<span>1,005,618 views</span>
+							<span class="view-count text">1,005,618 views</span>
 						</div>
 						<div class="flex"></div>
 						<div class="menu-controller">
-							<a class="likes">
-								<button>
-    								<span id="like-button" class=".glyphicon glyphicon-thumbs-up"></span>
-								</button>
-								<span>25K</span>
-							</a>
-							<a href="">DISLIKES</a>
-							<a href="">SHARE</a>
-							<a href="">ADD TO</a>
-						</div>
+							<div class="like-button-renderer">
+								<a class="glyphicon-button likes">
+									<button class="glyphicon-button">
+    									<span class="glyphicon glyphicon-thumbs-up"></span>
+									</button>
+									<span class="glyphicon-button text">25K</span>
+								</a>
+							</div>							
+							<div class="dislike-button-renderer">
+								<a class="glyphicon-button dislikes">
+									<button class="glyphicon-button">
+    									<span class="glyphicon glyphicon-thumbs-down"></span>
+									</button>
+									<span class="glyphicon-button text">2K</span>
+								</a>
+							</div>
+							<div class="share-button-renderer">
+								<a class="glyphicon-button share">
+									<button class="glyphicon-button">
+    									<span class="glyphicon glyphicon-share-alt"></span>
+									</button>
+									<span class="glyphicon-button text">SHARE</span>
+								</a>
+							</div>
+							<div class="add-to-button-renderer">
+								<a class="glyphicon-button add-to">
+									<button class="glyphicon-button">
+    									<span class="glyphicon glyphicon-th-list"></span>
+									</button>
+								</a>
+							</div>
+							<div class="more-options-button-renderer">
+								<a class="glyphicon-button more-options">
+									<button class="glyphicon-button">
+    									<span class="glyphicon glyphicon-option-horizontal"></span>
+									</button>
+								</a>
+							</div>						</div>
 					</div>
 				</div>
 				<div class="secondary-info">
@@ -104,9 +132,9 @@
 						</div>
 						<div class="subscribe-button-renderer">
 							<button class="subscribe-button" href="">
-							SUBSCRIBE
-							<span id="number-subs">382</span>
-						</button>
+								<span id="subscribe" class="subscribe-button text">SUBSCRIBE</span>
+								<span id="subscribe-number" class="subscribe-button text">382</span>
+							</button>
 					</div>
 					</div>
 				</div>
@@ -127,11 +155,5 @@
 			<input type="text" name="new-comment">
 		</div>
 	</div>
-	
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
