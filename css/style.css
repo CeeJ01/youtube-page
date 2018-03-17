@@ -1,15 +1,36 @@
-h1 {
+h1,h2,h3,h4 p {
 	margin: 0;
 	padding: 0;
+
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 13px;
+	font-weight: lighter;
+	color: gray;
 }
 
 input {
+
 }
 
 button {
 	box-sizing: border-box;
 	border: none;
 	background: transparent;
+}
+
+.body {
+	padding-bottom: 20px;
 }
 
 .glyphicon {
@@ -149,6 +170,8 @@ button {
 
 .video-nav {
 	width: 66%;
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 24px;
 }
 
 
@@ -157,12 +180,12 @@ button {
 
 .primary-info {
 	padding: 20px 0 8px 0;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid lightgrey;
 
 }
 
 .primary-info-cont {
-	padding: 13px 0px 0px 0px;
+	padding: 13px 10px 0px 0px;
 	display: flex;
 	align-content: center;
 }
@@ -301,19 +324,127 @@ button {
 	width: 66%;
 }
 
-.up-next {
-	float: right;
-	width: 32%;
+.sort-comments {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.add-comments {
+	border-bottom: 1px solid lightgray; 
+}
+
+.list-of-comments {
+
+}
+
+#comments-count {
+	font-size: 22px;
+	font-weight: bold;
+	margin-right: 32px;
+}
+
+#sort-by {
+	font-size: 22px;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: justify;
+}
+
+#sort-by-comments {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.add-comments {
+	display: flex;
+	flex-direction: row;
+}
+
+.comments-user-input {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.comments-user-input-box {
+	display: flex;
+	flex: 1;
+}
+
+.comments-user-input-modifiers {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#new-comment {
+	display: flex;
+	flex: 1;
+	border: none;
+	border-bottom: 1px solid lightgray;
 }
 
 /* UP-NEXT ASIDE: */
 
 .up-next {
+	float: right;
+	width: 32%;
 	display: flex;
 	flex-direction: column;
+	padding-right: 19.7px;
 }
 
 .autoplay {
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid lightgray;
+}
+
+.autoplay-info {
+	margin-bottom: 12px;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	align-items: center;
+}
+
+#up-next-text {
+	font-weight: bold;
+	flex: 1;
+}
+
+#autoplay-text {
+	font-size: 12px;
+	font-weight: bold;
+	color: gray;
+
+}
+
+.recommended-video {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 10px;
+}
+
+.video-info {
+	margin-left: 8px;
+}
+
+.video-title {
+	margin: 0 0 4px 0;
+}
+
+.video-author {
+	color: gray;
+}
+
+.video-description {
+	color: gray;
+}
+
+.recommended-video-show-more {
+	background-color: lightgray;
+	padding: 8px 0 8px 0;
 }
